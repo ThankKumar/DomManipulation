@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script>
+            function changeToFriend(){
+                  var imgRef = document.getElementById("img1");
+                  imgRef.style.borderRadius="0%";
+                  imgRef.src="https://avatars.githubusercontent.com/u/56128152?v=4"
+            }
+
+            function changeTofamily(){
+                  var imgRef = document.getElementById("img1");
+                  imgRef.src="https://avatars.githubusercontent.com/u/63522967?v=4"
+            }
+      </script>
+</head>
+<body>
+      
+
+      <div>
+            <h1>Image TASK</h1>
+            <img id="img1" src="https://cdn.pixabay.com/photo/2021/10/11/11/12/countryside-6700296_960_720.jpg" height="150px"  alt="">
+            <button onclick="changeToFriend()">Friends</button>
+            <button onclick="changeTofamily()">Family</button>
+      </div>
+</body>
+</html>

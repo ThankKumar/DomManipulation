@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <style>
+            .container {
+              width: 500px;
+              box-shadow: 0 0 10px black;
+              padding: 30px;
+              margin: 100px auto;
+            }
+          </style>
+      <script>
+            function fnChangeDocument(){
+                  var h2Ref = document.getElementById("h2Id");
+                  h2Ref.innerText = "Hello, Javascript";
+                  h2Ref.style.color="khaki";
+                  h2Ref.style.backgroundColor = "cornsilk";
+
+                  var p2Ref = document.getElementById("p1");
+                  p2Ref.innerText = "lorem10";
+                  p2Ref.style.color="red";
+                  p2Ref.style.backgroundColor = "cornsilk";
+
+                  var bodyRef = document.getElementById("body1");
+                  bodyRef.style.backgroundColor="yellow";
+                 
+            }
+      </script>
+</head>
+<body >
+        <div class="container" id="body1">
+      <div>
+        <h2 id="h2Id">Welcome to HTML World</h2>
+      </div>
+
+      <div>
+        <p id="p1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+          voluptate aut a magnam rerum, eos, omnis vitae cumque, quas nisi
+        </p>
+      </div>
+      <button onclick="fnChangeDocument()">Change content</button>
+    </div>
+</body>
+</html>
